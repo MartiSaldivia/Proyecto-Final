@@ -1,0 +1,83 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10px;
+    background-color: white;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif, monospace;
+    width: 100%;
+    margin: auto;
+}
+.header{
+    background-image: url('../img/biblioteca.jpg');
+    width: 100%;
+    grid-column: 1/4;
+    height: 486px;
+    color: #fff;
+    background-color: red;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.header h1{
+    margin-top: 400px;
+    margin-left: 590px;
+    color:#fff
+}
+#menu {
+    grid-column: 1/4;
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+}
+
+ul,ol {
+    list-style: none;
+}
+.nav {
+    height: 50px;
+
+}
+.nav li a {
+    background-color: red;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+.nav li a:hover {
+    background-color: #c42c2c;
+}
+.nav > li{
+    float: left;
+}
+.nav li ul {
+    display:none;
+    position: relative;
+    min-width: 100px;
+}
+.nav li:hover > ul {
+    display: block;
+
+}
+table{
+    grid-column: 2/5;
+    border-collapse: collapse;
+    margin: 10px;
+    margin-left: 500px;
+}
+table caption{
+    background-color: red;
+    color: #fff;
+
+}
+td, th{
+    border: 2px solid red;
+}
+footer{
+    width: 100%;
+    grid-column: 1/4;
+    background-color:red;
+    color: white;
+    text-align: center;
+}
